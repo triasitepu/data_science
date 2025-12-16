@@ -40,27 +40,33 @@ Proyek ini bertujuan untuk mengklasifikasi kondisi pasien berdasarkan data HCV k
 ---
 
 ## 📁 Struktur Folder
-
-project/
-├── data/ # Dataset (tidak di-commit, download manual)
-├── notebooks/ # Jupyter notebooks
-│ └── HCV_Analysis.ipynb
-├── src/ # Source code
-├── models/ # Saved models
-│ ├── lmodel_baseline_logistic_regression.pkl
-│ ├── ml_random_forest_smote.pkl
-│ └── deep_learning_mlp_smote.pkl
-├── images/ # Visualizations
-│ ├── Confusion_Matrix_LogisticRegression.png
-│ ├── Confusion_Matrix_RandomForest.png
-│ ├── Confusion_Matrix_Keras_MLP.png
-│ ├── Feature_Importance.png
-│ ├── Distribusi_Kategori.png
-│ └── Perbandingan_Metrik_Model.png
-├── requirements.txt
+UAS_HCV/
+│
+├── data/                   # Dataset (tidak di-commit, download manual)
+│
+├── notebooks/              # Jupyter notebooks
+│   └── HCV_Analysis.ipynb
+│
+├── src/                    # Source code
+│
+├── models/                 # Saved models
+│   ├── lmodel_baseline_logistic_regression.pkl
+│   ├── ml_random_forest_smote.pkl
+│   └── deep_learning_mlp_smote.pkl
+│
+├── images/                 # Visualizations
+│   ├── Confusion_Matrix_LogisticRegression.png
+│   ├── Confusion_Matrix_RandomForest.png
+│   ├── Confusion_Matrix_Keras_MLP.png
+│   ├── Feature_Importance.png
+│   ├── Distribusi_Kategori.png
+│   └── Perbandingan_Metrik_Model.png
+│
+├── requirements.txt        # Dependencies
 ├── Checklist_Submit.md
 ├── .gitignore
 └── README.md
+
 
 
 # 3. 📊 Dataset
@@ -114,7 +120,7 @@ Tahapan yang dilakukan:
 
 ### **Model 3 – Deep Learning**
 - **Scikit-learn MLP:** Pipeline sama seperti di atas  
-- **Keras MLP:** 2 hidden layer, optimizer Adam, batch size 32, epochs 50, validation split 0.2, callbacks: EarlyStopping, ReduceLROnPlateau  
+- **Keras MLP:** 2 hidden layer, optimizer Adam, batch size 32, epochs 20, validation split 0.2, callbacks: EarlyStopping, ReduceLROnPlateau  
 
 ---
 
