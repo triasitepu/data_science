@@ -47,9 +47,9 @@ project/
 │   └── HCV_Analysis.ipynb
 ├── src/                     # Source code
 ├── models/                  # Saved models
-│   ├── model_baseline_logistic_regression.pkl
-│   ├── ml_random_forest_smote.pkl
-│   └── deep_learning_mlp_smote.pkl
+│   ├── Baseline.pkl
+│   ├── ML.pkl
+│   └── Deep_Learning.pkl
 ├── images/                  # Visualizations
 │   ├── Confusion_Matrix_LogisticRegression.png
 │   ├── Confusion Matrix Random Forest.png
@@ -137,7 +137,7 @@ Tahapan yang dilakukan:
 
 # 7. 🏁 Kesimpulan
 - **Model terbaik:** Random Forest  
-- **Performa:** Accuracy=1.00, Precision=1.00, Recall=1.00  
+- **Performa:** Accuracy=0.94, Precision=0.98, Recall=0.94
 - **Alasan:** Menangkap pola non-linear, robust, stabil pada dataset tabular, performa sempurna  
 - **Insight:** Logistic Regression sudah tinggi akurasinya (~97.56%), Random Forest sempurna, Deep Learning kurang unggul pada dataset kecil  
 
