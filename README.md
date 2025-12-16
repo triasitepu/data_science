@@ -52,11 +52,12 @@ project/
 │   └── deep_learning_mlp_smote.pkl
 ├── images/                  # Visualizations
 │   ├── Confusion_Matrix_LogisticRegression.png
-│   ├── Confusion_Matrix_RandomForest.png
+│   ├── Confusion Matrix Random Forest.png
 │   ├── Confusion_Matrix_Keras_MLP.png
-│   ├── Feature_Importance.png
-│   ├── Distribusi_Kategori.png
-│   └── Perbandingan_Metrik_Model.png
+│   ├── Feature Importance - Random Forest.png
+│   ├── Distribusi_tiap_fitur.png
+│   ├── Distribusi Kategori Pnyakit Hepatitis C.png
+│   └── Perbandingan Metrik Kinerja Antar Fitur.png
 ├── requirements.txt         # Dependencies
 ├── Checklist_Submit.md
 ├── .gitignore
@@ -113,8 +114,7 @@ Tahapan yang dilakukan:
 - Pipeline: sama seperti baseline  
 - Menangkap pola non-linear  
 
-### **Model 3 – Deep Learning**
-- **Scikit-learn MLP:** Pipeline sama seperti di atas  
+### **Model 3 – Deep Learning** 
 - **Keras MLP:** 2 hidden layer, optimizer Adam, batch size 32, epochs 20, validation split 0.2, callbacks: EarlyStopping, ReduceLROnPlateau  
 
 ---
@@ -124,15 +124,14 @@ Tahapan yang dilakukan:
 
 | Model | Accuracy | Weighted F1-Score | Catatan |
 |-------|----------|-----------------|---------|
-| Logistic Regression | 0.9756 | 0.97 | Performa baik, terutama kelas mayoritas |
-| Random Forest | 1.0000 | 1.00 | Performa sempurna, potensi overfitting |
-| Scikit-learn MLP | 0.9593 | 0.96 | Performa baik, sedikit di bawah RF dan LR |
-| Keras MLP | 0.9675 | 0.97 | Stabil, performa baik |
+| Logistic Regression | 0.93| 0.93 | Performa baik, terutama kelas mayoritas |
+| Random Forest | 0.94 | 0.94 | Performa sangat baik pada kelas mayoritas |
+| Keras MLP | 0.94 | 0.94 | Performa sangat baik pada kelas mayoritas|
 
 ### Visualisasi Perbandingan
-![Perbandingan Metrik Model](images/Perbandingan_Metrik_Model.png)  
-![Distribusi Kategori](images/Distribusi_Kategori.png)  
-![Feature Importance](images/Feature_Importance.png)  
+![Perbandingan Metrik Model](images/Perbandingan%20Metrik%20Kinerja%20Antar%20Model.png)  
+![Distribusi Kategori](images/Distribusi_tiap_fitur.png)  
+![Feature Importance](images/Feature%20Importance%20-%20Random%20Forest.png)  
 
 ---
 
