@@ -40,7 +40,7 @@ Proyek ini bertujuan untuk mengklasifikasi kondisi pasien berdasarkan data HCV k
 ---
 
 ## 📁 Struktur Folder
-UAS_HCV/
+project/
 │
 ├── data/                   # Dataset (tidak di-commit, download manual)
 │
