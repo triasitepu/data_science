@@ -1,5 +1,71 @@
+# 📘 Judul Proyek
+ANALISIS PERBANDINGAN MODEL BASELINE, MACHINE LEARNING, DAN DEEP LEARNING UNTUK KLASIFIKASI PENYAKIT HEPATITIS C BERDASARKAN DATA LABORATORIUM DARAH
+
+## 👤 Informasi
+- **Nama:** Tria Wilujeng Rahayu br Sitepu  
+- **Repo:** [https://github.com/triasitepu/data_science.git](https://github.com/triasitepu/data_science.git)  
+- **Laporan dan Video:** [Link Drive](https://drive.google.com/drive/folders/1kqHdqYFDP-c_E735wFDHX_XX184ZNbRv?usp=sharing)  
 
 ---
+
+# 1. 🎯 Ringkasan Proyek
+Proyek ini bertujuan untuk mengklasifikasi kondisi pasien berdasarkan data HCV ke dalam beberapa kategori: **Blood Donor, Suspect Blood Donor, Hepatitis, Fibrosis, dan Cirrhosis**, menggunakan dataset `hcvdat0.csv`. Tahapan yang dilakukan:
+
+- Data cleaning & preparation (penanganan nilai hilang, encoding fitur)  
+- Membuat empat model klasifikasi:
+  - **Baseline:** Logistic Regression  
+  - **Advanced ML:** Random Forest  
+  - **Deep Learning (Scikit-learn MLP)**  
+  - **Deep Learning (Keras MLP)**  
+- Evaluasi performa model (Accuracy, Precision, Recall, F1-score)  
+- Analisis feature importance untuk Random Forest  
+
+---
+
+# 2. 📄 Problem & Goals
+
+**Problem Statements:**  
+- Identifikasi kondisi Hepatitis C secara manual sulit dan memakan waktu  
+- Dataset memiliki nilai hilang, fitur kategorikal, dan class imbalance  
+- Perlu perbandingan performa antara model baseline, ML lanjutan, dan Deep Learning  
+- Menentukan fitur laboratorium darah yang paling berpengaruh  
+
+**Goals:**  
+- Membuat empat model klasifikasi (Logistic Regression, Random Forest, Scikit-learn MLP, Keras MLP)  
+- Memperoleh akurasi tinggi pada model terbaik  
+- Melakukan preprocessing data (imputasi, encoding, scaling, SMOTE, train-test split)  
+- Mengevaluasi performa model (Accuracy, Precision, Recall, F1-score)  
+- Analisis feature importance untuk interpretasi model  
+
+---
+
+## 📁 Struktur Folder
+UAS_HCV/
+│
+├── data/ # Dataset (tidak di-commit, download manual)
+│
+├── notebooks/ # Jupyter notebooks
+│ └── HCV_Analysis.ipynb
+│
+├── src/ # Source code
+│
+├── models/ # Saved models
+│ ├── lmodel_baseline_logistic_regression.pkl
+│ ├── ml_random_forest_smote.pkl
+│ └── deep_learning_mlp_smote.pkl
+│
+├── images/ # Visualizations
+│ ├── Confusion_Matrix_LogisticRegression.png
+│ ├── Confusion_Matrix_RandomForest.png
+│ ├── Confusion_Matrix_Keras_MLP.png
+│ ├── Feature_Importance.png
+│ ├── Distribusi_Kategori.png
+│ └── Perbandingan_Metrik_Model.png
+│
+├── requirements.txt
+├── Checklist_Submit.md
+├── .gitignore
+└── README.md
 
 # 3. 📊 Dataset
 - **Sumber:** UCI Machine Learning Repository  
