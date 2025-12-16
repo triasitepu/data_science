@@ -1,11 +1,47 @@
-# Dataset
-data/
+# ------------------------------------------------------
+# DATASET (DO NOT COMMIT)
+# ------------------------------------------------------
+data/*
+!data/.gitkeep
 
-# Environment / virtual env
-environment/
+*.csv
+*.arff
+*.xlsx
+*.xls
+*.json
+*.txt
+*.tsv
+*.zip
+*.gz
+*.rar
+*.data
 
-# Jupyter cache
+!requirements.txt
+
+datasets/
+downloads/
+raw_data/
+processed_data/
+
+# ------------------------------------------------------
+# PYTHON & NOTEBOOK
+# ------------------------------------------------------
+__pycache__/
+*.pyc
 .ipynb_checkpoints/
 
-# Python cache
-__pycache__/
+# ------------------------------------------------------
+# VIRTUAL ENV
+# ------------------------------------------------------
+venv/
+.env/
+*.env
+environment/
+
+# ------------------------------------------------------
+# OS & BINARIES
+# ------------------------------------------------------
+.DS_Store
+*.dll
+*.so
+*.pyd
